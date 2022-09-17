@@ -97,7 +97,8 @@ lines() {
 
 **Example Function (bash 3):**
 
-This method uses less memory than the `mapfile` method and works in `bash` 3 but it is slower for bigger files.
+This method uses less memory than the `mapfile` method and works in `bash` 3 but it is
+slower for bigger files.
 
 ```sh
 lines_loop() {
@@ -122,7 +123,8 @@ $ lines_loop ~/.bashrc
 
 ## Count files or directories in directory
 
-This works by passing the output of the glob to the function and then counting the number of arguments.
+This works by passing the output of the glob to the function and then counting the
+number of arguments.
 
 **Example Function:**
 

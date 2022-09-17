@@ -2,8 +2,7 @@
 
 ## Get the terminal size in lines and columns (*from a script*)
 
-This is handy when writing scripts in pure bash and `stty`/`tput` can’t be
-called.
+This is handy when writing scripts in pure bash and `stty`/`tput` can’t be called.
 
 **Example Function:**
 

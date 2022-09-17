@@ -24,9 +24,12 @@ read_sleep 0.1
 read_sleep 30
 ```
 
-For performance-critical situations, where it is not economic to open and close an excessive number of file descriptors, the allocation of a file descriptor may be done only once for all invocations of `read`:
+For performance-critical situations, where it is not economic to open and close an
+excessive number of file descriptors, the allocation of a file descriptor may be done
+only once for all invocations of `read`:
 
-(See the generic original implementation at https://blog.dhampir.no/content/sleeping-without-a-subprocess-in-bash-and-how-to-sleep-forever)
+(See the generic original implementation
+[here](https://blog.dhampir.no/content/sleeping-without-a-subprocess-in-bash-and-how-to-sleep-forever))
 
 ```shell
 exec {sleep_fd}<> <(:)
@@ -63,7 +66,8 @@ fi
 
 ## Get the current date using `strftime`
 
-Bash’s `printf` has a built-in method of getting the date which can be used in place of the `date` command.
+Bash’s `printf` has a built-in method of getting the date which can be used in place of
+the `date` command.
 
 **CAVEAT:** Requires `bash` 4+
 
@@ -213,7 +217,8 @@ command ls
 
 ## Run a command in the background
 
-This will run the given command and keep it running, even after the terminal or SSH connection is terminated. All output is ignored.
+This will run the given command and keep it running, even after the terminal or SSH
+connection is terminated. All output is ignored.
 
 ```sh
 bkr() {
@@ -227,7 +232,8 @@ bkr ./some_script.sh # some_script.sh is now running in the background
 
 **CAVEAT:** Requires `bash` 4+
 
-This uses local namerefs to avoid using `var=$(some_func)` style command substitution for function output capture.
+This uses local namerefs to avoid using `var=$(some_func)` style command substitution
+for function output capture.
 
 ```sh
 to_upper() {

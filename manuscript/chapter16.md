@@ -60,8 +60,8 @@
 
 ## Get the name of the Operating System / Kernel
 
-This can be used to add conditional support for different Operating
-Systems without needing to call `uname`.
+This can be used to add conditional support for different Operating Systems without
+needing to call `uname`.
 
 ```shell
 "$OSTYPE"
@@ -83,7 +83,9 @@ This is an alternative to the `pwd` built-in.
 
 ## Get a pseudorandom integer
 
-Each time `$RANDOM` is used, a different integer between `0` and `32767` is returned. This variable should not be used for anything related to security (*this includes encryption keys etc*).
+Each time `$RANDOM` is used, a different integer between `0` and `32767` is returned.
+This variable should not be used for anything related to security (*this includes
+encryption keys etc*).
 
 
 ```shell

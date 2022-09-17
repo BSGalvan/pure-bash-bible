@@ -2,9 +2,9 @@
 
 ## Trim leading and trailing white-space from string
 
-This is an alternative to `sed`, `awk`, `perl` and other tools. The
-function below works by finding all leading and trailing white-space and
-removing it from the start and end of the string. The `:` built-in is used in place of a temporary variable.
+This is an alternative to `sed`, `awk`, `perl` and other tools. The function below works
+by finding all leading and trailing white-space and removing it from the start and end
+of the string. The `:` built-in is used in place of a temporary variable.
 
 **Example Function:**
 
@@ -31,9 +31,9 @@ John Black
 
 ## Trim all white-space from string and truncate spaces
 
-This is an alternative to `sed`, `awk`, `perl` and other tools. The
-function below works by abusing word splitting to create a new string
-without leading/trailing white-space and with truncated spaces.
+This is an alternative to `sed`, `awk`, `perl` and other tools. The function below works
+by abusing word splitting to create a new string without leading/trailing white-space
+and with truncated spaces.
 
 **Example Function:**
 
@@ -61,15 +61,15 @@ John Black is my name.
 
 ## Use regex on a string
 
-The result of `bash`'s regex matching can be used to replace `sed` for a
-large number of use-cases.
+The result of `bash`'s regex matching can be used to replace `sed` for a large number of
+use-cases.
 
-**CAVEAT**: This is one of the few platform dependent `bash` features.
-`bash` will use whatever regex engine is installed on the user's system.
-Stick to POSIX regex features if aiming for compatibility.
+**CAVEAT**: This is one of the few platform dependent `bash` features. `bash` will use
+whatever regex engine is installed on the user's system. Stick to POSIX regex features
+if aiming for compatibility.
 
-**CAVEAT**: This example only prints the first matching group. When using
-multiple capture groups some modification is needed.
+**CAVEAT**: This example only prints the first matching group. When using multiple
+capture groups some modification is needed.
 
 **Example Function:**
 

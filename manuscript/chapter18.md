@@ -112,7 +112,9 @@ f()for i in "$@"; do echo "$i"; done
 
 ## Simpler `case` statement to set variable
 
-The `:` built-in can be used to avoid repeating `variable=` in a case statement. The `$_` variable stores the last argument of the last command. `:` always succeeds so it can be used to store the variable value.
+The `:` built-in can be used to avoid repeating `variable=` in a case statement. The
+`$_` variable stores the last argument of the last command. `:` always succeeds so it
+can be used to store the variable value.
 
 ```shell
 # Modified snippet from Neofetch.

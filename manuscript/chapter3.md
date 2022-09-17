@@ -79,7 +79,8 @@ for dir in ~/Downloads/*/; do
 done
 
 # Brace Expansion.
-for file in /path/to/parentdir/{file1,file2,subdir/file3}; do
+for file in /path/to/parentdir/{file1,file2,subdir/file3};
+do
     printf '%s\n' "$file"
 done
 

@@ -2,8 +2,8 @@
 
 ## Reverse an array
 
-Enabling `extdebug` allows access to the `BASH_ARGV` array which stores
-the current function’s arguments in reverse.
+Enabling `extdebug` allows access to the `BASH_ARGV` array which stores the current
+function’s arguments in reverse.
 
 **CAVEAT**: Requires `shopt -s compat44` in `bash` 5.0+.
 
@@ -37,9 +37,9 @@ red
 
 ## Remove duplicate array elements
 
-Create a temporary associative array. When setting associative array
-values and a duplicate assignment occurs, bash overwrites the key. This
-allows us to effectively remove array duplicates.
+Create a temporary associative array. When setting associative array values and a
+duplicate assignment occurs, bash overwrites the key. This allows us to effectively
+remove array duplicates.
 
 **CAVEAT:** Requires `bash` 4+
 
@@ -103,9 +103,8 @@ $ random_array_element 1 2 3 4 5 6 7
 
 ## Cycle through an array
 
-Each time the `printf` is called, the next array element is printed. When
-the print hits the last array element it starts from the first element
-again.
+Each time the `printf` is called, the next array element is printed. When the print hits
+the last array element it starts from the first element again.
 
 ```sh
 arr=(a b c d)
